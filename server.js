@@ -26,5 +26,6 @@ io.on('connection', socket => {
   })
 })
 
+const host = '0.0.0.0'
 const port = process.env.PORT || 3000
-server.listen(port, () => console.log('Express server is running on port: ' + port))
+server.listen(port, host, () => console.log('Express server is running on port: ' + port))
